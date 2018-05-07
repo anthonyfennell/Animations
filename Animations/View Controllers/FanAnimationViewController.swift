@@ -14,6 +14,7 @@ class FanAnimationViewController: SquareViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Fan"
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     override func viewWillAppear(_ animated: Bool) {
