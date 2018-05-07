@@ -33,9 +33,9 @@ class Pizza: UIView {
     }
 
     override func draw(_ rect: CGRect) {
-        UIColor.purple.set()
-        addSliceLayer(quadrant: .one)
-        self.setNeedsLayout()
+        addSliceLayer(quadrant: .one, color: UIColor.purple.withAlphaComponent(0.7))
+        //addSliceLayer(quadrant: .two, color: UIColor.orange.withAlphaComponent(0.7))
+        //self.setNeedsLayout()
 //        addSliceLayer(quadrant: .two)
 //        addSliceLayer(quadrant: .three)
 //        addSliceLayer(quadrant: .four)
@@ -45,11 +45,20 @@ class Pizza: UIView {
 //        addSliceLayer(quadrant: .eight)
     }
     
-    func addSliceLayer(quadrant: Quadrant) {
-        let layer = CAShapeLayer()
-        _ = getSlice(quadrant: quadrant)
-        //self.layer.addSublayer(layer)
-    
+    func addSliceLayer(quadrant: Quadrant, color: UIColor) {
+        let layer = getSlice(quadrant: quadrant)
+        
+        // NOTE: - Mother fucker this changes the layer color. Setting the stroke color didn't show.
+        layer.fillColor = color.cgColor
+        self.layer.addSublayer(layer)
+        
+        // Transform
+        let toValue = CATransform3DRotate(layer.transform, .pi, 1, 1, 0)
+        let animation = CABasicAnimation(keyPath: "transform")
+        animation.duration = 2.0
+        animation.repeatCount = MAXFLOAT
+        animation.toValue = toValue
+        layer.add(animation, forKey: "tranformME")
         
 //        let animationX = getFlipAnimationX(quadrant: quadrant)
 //        let animationY = getFlipAnimationY(quadrant: quadrant)
@@ -62,20 +71,26 @@ class Pizza: UIView {
 //        layer.anchorPoint = CGPoint(x: pointX, y: pointY)
 //        layer.add(animationGroup, forKey: "blah")
         //addFlipAnimation3D(quadrant: quadrant, layer: layer)
-        //layer.setNeedsLayout()
     }
 
-    func getSlice(quadrant: Quadrant) -> CGPath {
+    func getSlice(quadrant: Quadrant) -> CAShapeLayer {
+        let layer = CAShapeLayer()
         let path = UIBezierPath()
-        let sPointX = arcRadius * cos(quadrant.startAngle()) + arcRadius
-        let sPointY = arcRadius * sin(quadrant.startAngle()) + arcRadius
-        let startPoint: CGPoint = CGPoint(x: sPointX, y: sPointY)
+        let startAngle = quadrant.startAngle()
+        let endAngle = quadrant.endAngle()
+        let startX = arcRadius * cos(startAngle) + arcRadius
+        let startY = arcRadius * sin(startAngle) + arcRadius
+        let startPoint: CGPoint = CGPoint(x: startX, y: startY)
         path.lineWidth = 3.0
         path.move(to: startPoint)
-        path.addArc(withCenter: pizzaCenter, radius: arcRadius, startAngle: quadrant.startAngle(), endAngle: quadrant.endAngle(), clockwise: true)
+        path.addArc(withCenter: pizzaCenter, radius: arcRadius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
         path.addLine(to: pizzaCenter)
         path.fill()
-        return path.cgPath
+        layer.path = path.cgPath
+        let anchorX = arcRadius * cos(startAngle + .pi / 8) / 2 + arcRadius
+        let anchorY = arcRadius * sin(startAngle + .pi / 8) / 2 + arcRadius
+        layer.anchorPoint = CGPoint(x: 1, y: 0)
+        return layer
     }
     
     func getFlipAnimationY(quadrant: Quadrant) -> CABasicAnimation {
