@@ -15,6 +15,11 @@ class PizzaAnimationViewController: ViewController {
         title = "Pizza"
         addPizzaSlice()
     }
+    
+    override func goToNextScreen() {
+        let viewController = ViewControllerFactory.makeSquareAnimationVC()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 
     func addPizzaSlice() {
         let width: CGFloat = 150

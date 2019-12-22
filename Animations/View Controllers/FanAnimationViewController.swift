@@ -10,7 +10,6 @@ import UIKit
 
 class FanAnimationViewController: SquareViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Fan"
@@ -23,37 +22,36 @@ class FanAnimationViewController: SquareViewController {
     }
     
     override func goToNextScreen() {
-        let blobVC = ViewControllerFactory.makeBlobAnimationVC()
-        self.navigationController?.pushViewController(blobVC, animated: true)
+        self.navigationController?.pushViewController(ViewControllerFactory.makeLinearLoadingVC(), animated: true)
     }
     
     // MARK: - Square fans
     func addFanAnimations() {
-        let valueX: CGFloat = 50
-        let valueY: CGFloat = 100
+        let valueX: CGFloat = 60
+        let valueY: CGFloat = 60
         addSquareAndAnimate(center: view.center, rotation: .counterClockwise)
         addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX, y: view.center.y + valueY))
         addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX, y: view.center.y - valueY))
         addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX, y: view.center.y + valueY))
         addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX, y: view.center.y - valueY))
         
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y), rotation: .counterClockwise)
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y), rotation: .counterClockwise)
-        
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y + valueY))
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y + valueY))
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y - valueY))
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y - valueY))
-        
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y + valueY * 2), rotation: .counterClockwise)
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y - valueY * 2), rotation: .counterClockwise)
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y + valueY * 2), rotation: .counterClockwise)
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y - valueY * 2), rotation: .counterClockwise)
-        
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y + valueY * 3))
-        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y - valueY * 3))
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y + valueY * 3))
-        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y - valueY * 3))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y), rotation: .counterClockwise)
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y), rotation: .counterClockwise)
+//        
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y + valueY))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y + valueY))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y - valueY))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y - valueY))
+//        
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y + valueY * 2), rotation: .counterClockwise)
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y - valueY * 2), rotation: .counterClockwise)
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y + valueY * 2), rotation: .counterClockwise)
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y - valueY * 2), rotation: .counterClockwise)
+//        
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y + valueY * 3))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y - valueY * 3))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y + valueY * 3))
+//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y - valueY * 3))
     }
     
 

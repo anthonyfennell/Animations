@@ -14,17 +14,27 @@ struct ViewControllerFactory {
     static let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
     static func makeBlobAnimationVC() -> BlobAnimationViewController {
-        let viewController = BlobAnimationViewController()
-        return viewController
+        return BlobAnimationViewController()
     }
     
     static func makeSquareAnimationVC() -> SquareAnimationViewController {
-        let viewController = SquareAnimationViewController()
-        return viewController
+        return SquareAnimationViewController()
     }
     
     static func makePizzaAnimationVC() -> PizzaAnimationViewController {
-        let viewController = PizzaAnimationViewController()
+        return PizzaAnimationViewController()
+    }
+    
+    static func makeFanAnimationVC() -> FanAnimationViewController {
+        return FanAnimationViewController()
+    }
+    
+    static func makeLinearLoadingVC() -> LinearLoadingViewController {
+        return LinearLoadingViewController()
+    }
+    
+    static func makeAnimationTableVC() -> AnimationTableViewController {
+        let viewController = storyboard.instantiateViewController(withIdentifier: "AnimationTableVC") as! AnimationTableViewController
         return viewController
     }
 

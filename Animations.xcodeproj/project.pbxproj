@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8F0DE34120880CFB0085F63B /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DE34020880CFB0085F63B /* Pizza.swift */; };
+		8F40C9C723AF0FD50015166C /* LinearLoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9C623AF0FD50015166C /* LinearLoadingBar.swift */; };
+		8F40C9C923AF10120015166C /* AnimationConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9C823AF10120015166C /* AnimationConstant.swift */; };
+		8F40C9CB23AF10480015166C /* LinearLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9CA23AF10480015166C /* LinearLoadingViewController.swift */; };
 		8F55AEF620A0BF84006903A2 /* FanAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEF520A0BF84006903A2 /* FanAnimationViewController.swift */; };
 		8F55AEF820A0C051006903A2 /* BlobAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEF720A0C051006903A2 /* BlobAnimationViewController.swift */; };
 		8F55AEFA20A0C0A9006903A2 /* SquareContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEF920A0C0A9006903A2 /* SquareContainer.swift */; };
@@ -16,6 +19,11 @@
 		8F55AF0020A0C4A6006903A2 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEFF20A0C4A6006903A2 /* Animations.swift */; };
 		8F55AF0220A0C6CF006903A2 /* SquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AF0120A0C6CF006903A2 /* SquareViewController.swift */; };
 		8F55AF0620A0CA9E006903A2 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AF0520A0CA9E006903A2 /* ViewControllerFactory.swift */; };
+		8F55AF1420A0E62D006903A2 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AF1320A0E62D006903A2 /* UIView+Utils.swift */; };
+		8F66AFDF20CAF6BB00849196 /* AnimationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66AFDE20CAF6BB00849196 /* AnimationTableViewController.swift */; };
+		8F66AFE120CAF7DF00849196 /* AnimationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66AFE020CAF7DF00849196 /* AnimationTableViewCell.swift */; };
+		8F8E4A502256584500F2663F /* HoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E4A4F2256584500F2663F /* HoleViewController.swift */; };
+		8F8E4A5222565EB400F2663F /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E4A5122565EB400F2663F /* UIColor+Utils.swift */; };
 		8FB6DE752087B99000CBE658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6DE742087B99000CBE658 /* AppDelegate.swift */; };
 		8FB6DE772087B99000CBE658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6DE762087B99000CBE658 /* ViewController.swift */; };
 		8FB6DE7A2087B99000CBE658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6DE782087B99000CBE658 /* Main.storyboard */; };
@@ -45,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		8F0DE34020880CFB0085F63B /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		8F40C9C623AF0FD50015166C /* LinearLoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearLoadingBar.swift; sourceTree = "<group>"; };
+		8F40C9C823AF10120015166C /* AnimationConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConstant.swift; sourceTree = "<group>"; };
+		8F40C9CA23AF10480015166C /* LinearLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearLoadingViewController.swift; sourceTree = "<group>"; };
 		8F55AEF520A0BF84006903A2 /* FanAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanAnimationViewController.swift; sourceTree = "<group>"; };
 		8F55AEF720A0C051006903A2 /* BlobAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobAnimationViewController.swift; sourceTree = "<group>"; };
 		8F55AEF920A0C0A9006903A2 /* SquareContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareContainer.swift; sourceTree = "<group>"; };
@@ -53,6 +64,11 @@
 		8F55AEFF20A0C4A6006903A2 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		8F55AF0120A0C6CF006903A2 /* SquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewController.swift; sourceTree = "<group>"; };
 		8F55AF0520A0CA9E006903A2 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		8F55AF1320A0E62D006903A2 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		8F66AFDE20CAF6BB00849196 /* AnimationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTableViewController.swift; sourceTree = "<group>"; };
+		8F66AFE020CAF7DF00849196 /* AnimationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTableViewCell.swift; sourceTree = "<group>"; };
+		8F8E4A4F2256584500F2663F /* HoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleViewController.swift; sourceTree = "<group>"; };
+		8F8E4A5122565EB400F2663F /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
 		8FB6DE712087B99000CBE658 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB6DE742087B99000CBE658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB6DE762087B99000CBE658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +116,7 @@
 				8F55AEF920A0C0A9006903A2 /* SquareContainer.swift */,
 				8F0DE34020880CFB0085F63B /* Pizza.swift */,
 				8FD10CE0208AC8CB000DA29D /* Slice.swift */,
+				8F40C9C623AF0FD50015166C /* LinearLoadingBar.swift */,
 			);
 			path = "View Types";
 			sourceTree = "<group>";
@@ -109,12 +126,26 @@
 			children = (
 				8FB6DE762087B99000CBE658 /* ViewController.swift */,
 				8F55AF0120A0C6CF006903A2 /* SquareViewController.swift */,
-				8F55AEF520A0BF84006903A2 /* FanAnimationViewController.swift */,
+				8F8E4A4F2256584500F2663F /* HoleViewController.swift */,
 				8F55AEF720A0C051006903A2 /* BlobAnimationViewController.swift */,
+				8F55AEF520A0BF84006903A2 /* FanAnimationViewController.swift */,
+				8F40C9CA23AF10480015166C /* LinearLoadingViewController.swift */,
 				8F55AEFD20A0C14C006903A2 /* SquareAnimationViewController.swift */,
 				8F55AEFB20A0C100006903A2 /* PizzaAnimationViewController.swift */,
+				8F66AFDE20CAF6BB00849196 /* AnimationTableViewController.swift */,
+				8F66AFE020CAF7DF00849196 /* AnimationTableViewCell.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8F55AF1220A0E617006903A2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F55AF1320A0E62D006903A2 /* UIView+Utils.swift */,
+				8F8E4A5122565EB400F2663F /* UIColor+Utils.swift */,
+				8F40C9C823AF10120015166C /* AnimationConstant.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8FB6DE682087B99000CBE658 = {
@@ -148,6 +179,7 @@
 				8FB6DE7D2087B99000CBE658 /* LaunchScreen.storyboard */,
 				8FB6DE802087B99000CBE658 /* Info.plist */,
 				8F55AF0420A0C7D0006903A2 /* View Controllers */,
+				8F55AF1220A0E617006903A2 /* Utilities */,
 				8F55AF0320A0C7B4006903A2 /* View Types */,
 			);
 			path = Animations;
@@ -305,18 +337,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8E4A5222565EB400F2663F /* UIColor+Utils.swift in Sources */,
 				8F55AF0220A0C6CF006903A2 /* SquareViewController.swift in Sources */,
 				8F55AEFE20A0C14C006903A2 /* SquareAnimationViewController.swift in Sources */,
+				8F66AFDF20CAF6BB00849196 /* AnimationTableViewController.swift in Sources */,
+				8F55AF1420A0E62D006903A2 /* UIView+Utils.swift in Sources */,
+				8F40C9C723AF0FD50015166C /* LinearLoadingBar.swift in Sources */,
 				8FB6DE772087B99000CBE658 /* ViewController.swift in Sources */,
 				8FB6DE752087B99000CBE658 /* AppDelegate.swift in Sources */,
+				8F40C9C923AF10120015166C /* AnimationConstant.swift in Sources */,
 				8F55AEFC20A0C100006903A2 /* PizzaAnimationViewController.swift in Sources */,
 				8F55AF0620A0CA9E006903A2 /* ViewControllerFactory.swift in Sources */,
 				8F55AEF820A0C051006903A2 /* BlobAnimationViewController.swift in Sources */,
+				8F40C9CB23AF10480015166C /* LinearLoadingViewController.swift in Sources */,
 				8FD10CE1208AC8CB000DA29D /* Slice.swift in Sources */,
+				8F8E4A502256584500F2663F /* HoleViewController.swift in Sources */,
 				8F55AF0020A0C4A6006903A2 /* Animations.swift in Sources */,
 				8F0DE34120880CFB0085F63B /* Pizza.swift in Sources */,
 				8F55AEF620A0BF84006903A2 /* FanAnimationViewController.swift in Sources */,
 				8F55AEFA20A0C0A9006903A2 /* SquareContainer.swift in Sources */,
+				8F66AFE120CAF7DF00849196 /* AnimationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyfennell.edu.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -503,7 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyfennell.edu.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

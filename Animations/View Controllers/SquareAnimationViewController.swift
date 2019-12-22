@@ -19,30 +19,33 @@ class SquareAnimationViewController: ViewController {
         addThreeSquaresThatOverLapOnAnimate()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func goToNextScreen() {
-        let pizzaAnimationVC = ViewControllerFactory.makePizzaAnimationVC()
-        self.navigationController?.pushViewController(pizzaAnimationVC, animated: true)
+        self.navigationController?.pushViewController(ViewControllerFactory.makeAnimationTableVC(), animated: true)
     }
     
     // MARK: - Overlap Square Animation
     func addThreeSquaresThatOverLapOnAnimate() {
-        addSquareAnimateAnchorTopRight()
+        addSquareAnimateAnchorTopRight(.pi / 2)
         addSquareAnimateAnchorMiddle()
-        addSquareAnimateAnchorBottomLeftCorner()
+        //addSquareAnimateAnchorBottomLeftCorner()
     }
     
-    func addSquareAnimateAnchorTopRight() {
+    func addSquareAnimateAnchorTopRight(_ fromValue: CGFloat = 0) {
         let squareView = getHalvedSquare(width: 125, xOffset: 0, yOffset: -125, topColor: magentaColor, bottomColor: tealColor)
         self.view.addSubview(squareView)
         let anchorPoint = CGPoint(x: 1, y: 0)
-        Animations.rotate360(squareView: squareView, anchorPoint: anchorPoint, xAxis: 1, yAxis: 1)
+        Animations.rotate360(squareView: squareView, anchorPoint: anchorPoint, xAxis: -1, yAxis: -1, fromValue: fromValue)
     }
     
     func addSquareAnimateAnchorMiddle() {
         let squareView = getFourSquare(width: 125, xOffset: 0, yOffset: 0, colorA: tealColor, colorB: magentaColor)
         self.view.addSubview(squareView)
         let anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        Animations.rotate360(squareView: squareView, anchorPoint: anchorPoint, xAxis: 1, yAxis: 1, duration: 4.0)
+        Animations.rotate360(squareView: squareView, anchorPoint: anchorPoint, xAxis: -1, yAxis: -1, duration: 4.0)
     }
     
     func addSquareAnimateAnchorBottomLeftCorner() {

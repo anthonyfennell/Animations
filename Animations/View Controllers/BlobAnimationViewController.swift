@@ -20,9 +20,16 @@ class BlobAnimationViewController: SquareViewController {
         addSquareAnimations()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if self.isMovingFromParent {
+            print("Back button pressed?")
+        }
+    }
+    
     override func goToNextScreen() {
-        let squareAnimationVC = ViewControllerFactory.makeSquareAnimationVC()
-        self.navigationController?.pushViewController(squareAnimationVC, animated: true)
+        self.navigationController?.pushViewController(ViewControllerFactory.makeFanAnimationVC(), animated: true)
     }
     
     // MARK: - Many fans
