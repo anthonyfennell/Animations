@@ -25,17 +25,14 @@ enum AnimationCellType: String {
 
 class AnimationTableViewController: UITableViewController {
 
-    let cells: [AnimationCellType] = [.dropToBottom, .hopDown, .shakeHorizontal, .shakeVertical, .shakeBounce, .rotateXAxis, .rotateYAxis,
-                                      .rotateZAxis, .hopAround, .rotateXYAxis, .dropToBottom, .riseToTop, .riseToTop, .riseToTop, .riseToTop,
-                                      .hopUp, .riseToTop, .rotateZAxis, .hopAround, .shakeBounce, .shakeVertical, .dropToBottom]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+    let cells: [AnimationCellType] = [.dropToBottom, .hopDown, .shakeHorizontal, .shakeVertical,
+                                      .shakeBounce, .rotateXAxis, .rotateYAxis,
+                                      .rotateZAxis, .hopAround, .rotateXYAxis, .dropToBottom,
+                                      .riseToTop, .riseToTop, .riseToTop, .riseToTop,
+                                      .hopUp, .riseToTop, .rotateZAxis, .hopAround,
+                                      .shakeBounce, .shakeVertical, .dropToBottom]
 
     // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cells.count
     }

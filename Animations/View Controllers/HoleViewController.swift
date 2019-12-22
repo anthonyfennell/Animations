@@ -8,24 +8,6 @@
 
 import UIKit
 
-// A delay function
-func delay(seconds: Double, completion: @escaping ()-> Void) {
-    DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
-}
-
-enum ColorHex: Int, CaseIterable {
-    case white1=0xFFFFFF, gray1=0xD1D1D1, gray2=0xABAAAA, gray3 = 0x848484
-    case black1=0x535353, black2=0x272626
-    
-    public var color: UIColor {
-        return UIColor(hex: self.rawValue)
-    }
-    
-    public var string: String {
-        return "\(self.rawValue)"
-    }
-}
-
 class HoleViewController: ViewController {
     
     let radius: CGFloat = 3.0
@@ -124,9 +106,6 @@ class HoleViewController: ViewController {
     func getCircleLayer() -> CAShapeLayer {
         let layer = CAShapeLayer()
         layer.path = getPath1()
-        //layer.anchorPoint = CGPoint(x: self.view.center.x, y: self.view.center.y)
-        //layer.frame = CGRect(x: self.view.center.x - radius, y: self.view.center.y - radius, width: radius * 2, height: radius * 2)
-        //layer.bounds = CGRect(x: 0, y: 0, width: radius * 2, height: radius * 2)
         return layer
     }
 

@@ -34,26 +34,6 @@ class FanAnimationViewController: SquareViewController {
         addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX, y: view.center.y - valueY))
         addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX, y: view.center.y + valueY))
         addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX, y: view.center.y - valueY))
-        
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y), rotation: .counterClockwise)
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y), rotation: .counterClockwise)
-//        
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y + valueY))
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y + valueY))
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y - valueY))
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y - valueY))
-//        
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y + valueY * 2), rotation: .counterClockwise)
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 2, y: view.center.y - valueY * 2), rotation: .counterClockwise)
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y + valueY * 2), rotation: .counterClockwise)
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 2, y: view.center.y - valueY * 2), rotation: .counterClockwise)
-//        
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y + valueY * 3))
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x + valueX * 3, y: view.center.y - valueY * 3))
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y + valueY * 3))
-//        addSquareAndAnimate(center: CGPoint(x: view.center.x - valueX * 3, y: view.center.y - valueY * 3))
     }
-    
-
 
 }

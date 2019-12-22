@@ -11,6 +11,8 @@
 		8F40C9C723AF0FD50015166C /* LinearLoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9C623AF0FD50015166C /* LinearLoadingBar.swift */; };
 		8F40C9C923AF10120015166C /* AnimationConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9C823AF10120015166C /* AnimationConstant.swift */; };
 		8F40C9CB23AF10480015166C /* LinearLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9CA23AF10480015166C /* LinearLoadingViewController.swift */; };
+		8F40C9CD23AF130C0015166C /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9CC23AF130C0015166C /* ColorHex.swift */; };
+		8F40C9CF23AF13240015166C /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40C9CE23AF13240015166C /* Delay.swift */; };
 		8F55AEF620A0BF84006903A2 /* FanAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEF520A0BF84006903A2 /* FanAnimationViewController.swift */; };
 		8F55AEF820A0C051006903A2 /* BlobAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEF720A0C051006903A2 /* BlobAnimationViewController.swift */; };
 		8F55AEFA20A0C0A9006903A2 /* SquareContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F55AEF920A0C0A9006903A2 /* SquareContainer.swift */; };
@@ -56,6 +58,8 @@
 		8F40C9C623AF0FD50015166C /* LinearLoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearLoadingBar.swift; sourceTree = "<group>"; };
 		8F40C9C823AF10120015166C /* AnimationConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConstant.swift; sourceTree = "<group>"; };
 		8F40C9CA23AF10480015166C /* LinearLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearLoadingViewController.swift; sourceTree = "<group>"; };
+		8F40C9CC23AF130C0015166C /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		8F40C9CE23AF13240015166C /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		8F55AEF520A0BF84006903A2 /* FanAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanAnimationViewController.swift; sourceTree = "<group>"; };
 		8F55AEF720A0C051006903A2 /* BlobAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobAnimationViewController.swift; sourceTree = "<group>"; };
 		8F55AEF920A0C0A9006903A2 /* SquareContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareContainer.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				8F55AF1320A0E62D006903A2 /* UIView+Utils.swift */,
 				8F8E4A5122565EB400F2663F /* UIColor+Utils.swift */,
 				8F40C9C823AF10120015166C /* AnimationConstant.swift */,
+				8F40C9CC23AF130C0015166C /* ColorHex.swift */,
+				8F40C9CE23AF13240015166C /* Delay.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 				8F40C9C923AF10120015166C /* AnimationConstant.swift in Sources */,
 				8F55AEFC20A0C100006903A2 /* PizzaAnimationViewController.swift in Sources */,
 				8F55AF0620A0CA9E006903A2 /* ViewControllerFactory.swift in Sources */,
+				8F40C9CF23AF13240015166C /* Delay.swift in Sources */,
 				8F55AEF820A0C051006903A2 /* BlobAnimationViewController.swift in Sources */,
 				8F40C9CB23AF10480015166C /* LinearLoadingViewController.swift in Sources */,
 				8FD10CE1208AC8CB000DA29D /* Slice.swift in Sources */,
@@ -356,6 +363,7 @@
 				8F0DE34120880CFB0085F63B /* Pizza.swift in Sources */,
 				8F55AEF620A0BF84006903A2 /* FanAnimationViewController.swift in Sources */,
 				8F55AEFA20A0C0A9006903A2 /* SquareContainer.swift in Sources */,
+				8F40C9CD23AF130C0015166C /* ColorHex.swift in Sources */,
 				8F66AFE120CAF7DF00849196 /* AnimationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,7 +31,6 @@ class SquareAnimationViewController: ViewController {
     func addThreeSquaresThatOverLapOnAnimate() {
         addSquareAnimateAnchorTopRight(.pi / 2)
         addSquareAnimateAnchorMiddle()
-        //addSquareAnimateAnchorBottomLeftCorner()
     }
     
     func addSquareAnimateAnchorTopRight(_ fromValue: CGFloat = 0) {

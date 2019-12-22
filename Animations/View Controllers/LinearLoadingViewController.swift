@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinearLoadingViewController: SquareViewController {
+class LinearLoadingViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
